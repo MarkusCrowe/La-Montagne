@@ -19,6 +19,30 @@
 body {
   background: url(../img/bg.jpg) center/cover fixed;
 }
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  -webkit-animation: animeBefore 2s ease forwards;
+          animation: animeBefore 2s ease forwards;
+  z-index: 1000;
+}
+@-webkit-keyframes animeBefore {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes animeBefore {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 
 header {
   height: 32em;
@@ -106,6 +130,14 @@ header .head_container button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.navbar ul:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
+.navbar ul .nav-left {
+  background: rgb(238, 238, 228);
+  color: black;
 }
 .navbar ul li {
   font-family: "inter";

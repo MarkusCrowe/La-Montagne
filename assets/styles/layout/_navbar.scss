@@ -14,7 +14,17 @@
         color: $color1;
         display: flex;
         align-items: center;
+
+        &:hover li:not(:hover) {
+            background: none;
+            color: white;
+        }
         
+        .nav-left {
+            background: rgb(238, 238, 228);
+            color: black;   
+        }
+
         li {
             font-family: "inter";
             display: flex;
