@@ -1,0 +1,16 @@
+.button {
+    text-transform: uppercase;
+    font-family: "inter";
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    background: $color1;
+    border: 2px solid black;
+    padding: 15px 30px;
+    transition: 0.3s all;
+
+    &:hover {
+        background: $color3;
+        color: $color1;
+        cursor: pointer;
+    }
+}

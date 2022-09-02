@@ -1,0 +1,46 @@
+.navbar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(248, 248, 248, 0.223);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+
+    ul {
+        list-style-type: none;
+        color: $color1;
+        display: flex;
+        align-items: center;
+        
+        li {
+            font-family: "inter";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.3s all;
+            &:hover {
+                background: rgb(238, 238, 228);
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .pages {
+        width: 50%;
+        justify-content: space-around;
+        text-transform: uppercase;       
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+
+    .icons {
+        width: 30%;
+        justify-content: space-around;
+    }
+}

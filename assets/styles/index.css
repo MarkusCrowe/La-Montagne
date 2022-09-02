@@ -1,0 +1,519 @@
+@font-face {
+  font-family: "merri";
+  src: url(../fonts/Merriweather-LightItalic.ttf);
+}
+@font-face {
+  font-family: "merri-reg";
+  src: url(../fonts/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: "inter";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "merri-reg";
+}
+
+body {
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+
+header {
+  height: 32em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .head_container {
+  width: 70%;
+  height: 60%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+header .head_container h1 {
+  text-transform: uppercase;
+  font-family: "inter";
+  font-size: 3.2rem;
+  text-align: center;
+  width: 60%;
+}
+header .head_container p {
+  text-align: center;
+  font-family: "merri";
+  font-size: 0.9rem;
+}
+header .head_container button {
+  color: white;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+header .head_container button:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(248, 248, 248, 0.223);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  height: 50px;
+}
+.navbar ul {
+  list-style-type: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar ul li {
+  font-family: "inter";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.navbar ul li:hover {
+  background: rgb(238, 238, 228);
+  color: black;
+  cursor: pointer;
+}
+.navbar .pages {
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+.navbar .icons {
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+main .headline {
+  background: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+main .headline .headline-date {
+  font-size: 1rem;
+  font-style: normal;
+  position: relative;
+}
+main .headline .headline-date::before {
+  content: "";
+  background-color: rgb(196, 196, 196);
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  left: -15%;
+  top: 50%;
+}
+main .headline .headline-date::after {
+  content: "";
+  background-color: rgb(196, 196, 196);
+  width: 45%;
+  height: 1px;
+  position: absolute;
+  right: -15%;
+  top: 50%;
+}
+main .headline h2 {
+  font-family: "inter";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 65%;
+  letter-spacing: 2px;
+}
+main .headline p {
+  color: gray;
+  font-size: 0.8rem;
+  width: 60%;
+  text-align: center;
+  font-style: italic;
+  line-height: 30px;
+}
+main .headline img {
+  width: 80%;
+}
+main .news {
+  background: white;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+main .news::before {
+  content: "";
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+}
+main .news::after {
+  content: "";
+  background-color: rgb(196, 196, 196);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+}
+main .news article {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+main .news article .article-date {
+  color: gray;
+  font-size: 0.8rem;
+}
+main .news article h3 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 60%;
+  font-family: "inter";
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+main .news article img {
+  width: 80%;
+}
+main .news article .text {
+  width: 80%;
+  color: gray;
+  font-size: 0.8rem;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: "inter";
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  background: white;
+  border: 2px solid black;
+  padding: 15px 30px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.contact {
+  width: 80%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 50px;
+}
+.contact form {
+  width: 50%;
+  padding: 40px 0;
+}
+.contact form div {
+  width: 80%;
+  margin: 5px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 40px;
+}
+.contact form div label {
+  text-transform: uppercase;
+  font-family: "inter";
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+}
+.contact form div input {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 2.5px;
+  padding: 10px 5px;
+}
+.contact form div textarea {
+  height: 150px;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 2.5px;
+  padding: 5px 5px;
+  resize: none;
+}
+.contact form button {
+  margin: 40px 0;
+  width: 50%;
+}
+.contact section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact section article {
+  height: 25%;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.contact section article::before {
+  content: "";
+  background: rgb(196, 196, 196);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+.contact section article h4 {
+  text-align: center;
+  font-family: "inter";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+}
+.contact section article p {
+  font-size: 0.8rem;
+  color: gray;
+}
+.contact section article .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.contact section article .contact-icons .icon-container {
+  border: 1px solid rgb(196, 196, 196);
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.contact section article .contact-icons .icon-container:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+.contact section .line-bottom::after {
+  content: "";
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 910px) {
+  header .head_container {
+    width: 85%;
+  }
+  header .head_container h1 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    width: 100%;
+  }
+  header .head_container p {
+    font-size: 1.2rem;
+  }
+  header .head_container button {
+    font-size: 1.4rem;
+    height: 70px;
+    width: 70px;
+  }
+  header .navbar .pages {
+    width: 100%;
+  }
+  header .navbar .icons {
+    display: none;
+  }
+  main .headline .headline-date {
+    font-size: 1.4rem;
+  }
+  main .headline .headline-date::before {
+    width: 30%;
+  }
+  main .headline .headline-date::after {
+    width: 30%;
+  }
+  main .headline h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  main .headline p {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+  main .news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .news::before {
+    top: 0;
+  }
+  main .news::after {
+    display: none;
+  }
+  main .news article {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .news article h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 30px;
+  }
+  main .news article .text {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact form {
+    width: 100%;
+    position: relative;
+  }
+  .contact form div label {
+    font-size: 0.9rem;
+  }
+  .contact form button {
+    width: 250px;
+  }
+  .contact form::after {
+    content: "";
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .contact section {
+    width: 100%;
+    height: 500px;
+  }
+  .button {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=index.css.map */
